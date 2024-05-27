@@ -30,85 +30,81 @@
   
   <body>
     <div class="reveal">
-      
+	<!-- This is the part where I attempted to add a table of contents to the left side of the page -->
+	<div>
+	<style
+	.reveal-toc {
+	display: block;
+	float: left;
+    	text-align: center;
+    	top: 0;
+    	height: 100%;
+    	width: 200px;
+    	background-color: #ffffff;
+	font-size: 55%;
+    	padding: 20px;
+    	overflow-y: auto;
+    	z-index: auto;
+	}
+	</style>
+	 <h4> Table of Contents </h4>
+	 <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="data_management.html">Data Storage, Management and Sharing</a></li>
+			<ul>
+			<li><a href="management_querying.html">Management, querying and other database features</a></li>
+			<li><a href="">Fine-grained permission control</a></li>
+			<li><a href="">Flexible open access</a></li>
+			</ul>
+		<li><a href="index.html">Data Processing</a></li>
+			<ul>
+			<li><a href="">High-Performance Computing</a></li>	
+			<li><a href="">Containerized tools</a></li>	
+			<li><a href="">Specialized, interactive tools</a></li>
+			</ul>
+		<li><a href="">Data Visualization</a></li>
+		<li><a href="">Data Governance</a></li>
+		<li><a href="">Lowering the barriers to Open Science</a></li>	
+	 </ul>
+	 </div>
+	
       <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">	 
+      <div class="slides">
 	
-	<section data-background-color="#ffffff">
-	  <table class="reveal">
-		<tr>
-		<a href="MCIN.html"><img width="40%" src="images/MCIN.png" style="border: 0"</a>
-		</tr>
-		
-		<tr>
-		<p style="font-size:55%; color:#224372;"><a target="_blank" href="https://mcin.ca/">The McGill Centre for Integrative Neuroscience (MCIN)</a>, led by <a target="_blank" href="https://mcin.ca/about-mcin/alans-cv/">Dr. Alan Evans</a> 
-		at McGill University, <br> creates open neuroinformatics platforms to conduct computationally-intensive brain research using innovative mathematical and statistical approaches to integrate clinical, psychological or neuroimaging phenotypes with genotypic information. 
-		MCIN constitutes the neuroinformatics component of <a href="https://www.mcgill.ca/ludmercentre/" target = "_blank">the Ludmer Centre for Neuroinformatics and Mental Health</a> and coordinates global collaborative initiatives <br> including 
-		<a href="https://conp.ca/" target = "_blank">the Canadian Open Neuroscience Platform (CONP).</a> </small></p>
-		<p style="font-size:55%; color:#224372;"> Follow the links below to learn more about MCIN's platforms and projects based on use cases.</small></p>
-		</tr>
-		
-	    <tr>
-	      <td width="25%" style="vertical-align: middle">
-		<a href="data_management.html"><img width= "80%" src = "images/data-management.png" style="border: 0;border-radius: 10px;"></a>
-	      </td>
-		 
-		  <td width = "25%" style = "vertical-align:middle">		
-		<a href = "Big_brain.html"><img width= "80%" src="images/data-processing.png" style="border: 0; border-radius: 10px"></a>
-	      </td>
-		  
-		   <td width = "25%" style = "vertical-align: middle">
-		<a href="LORIS_indepth.html#/loris-indepth-destination"><img width= "80%" src = "images/data-visualization.png" style="border: 0; border-radius: 10px;"></a>
-	      </td>
-		  
-		  <td width = "25%" style = "vertical-align:middle">		
-		<a href = "Big_brain.html"><img width= "80%" src="images/data-governance.png" style="border: 0; border-radius: 10px"></a>
-	      </td>
-		
-	<!--
-		</tr>
-		<table class="reveal">
-		<tr>
-		<td width = "20%" style = "vertical-align:middle">		
-		<a href = "LORIS_indepth.html#/loris-indepth-destination"><img width= "60%" src="images/civet_logo.png" style="border: 3; border-color: rgba(0, 0, 0, 0); border-radius: 20px"></a>
-	      </td>
-		 
-		 <td width = "20%" style = "vertical-align:middle">		
-		<a href = "LORIS_indepth.html#/loris-indepth-destination"><img width= "60%" src="images/minc-logo.png" style="border: 3; border-color: rgba(0, 0, 0, 0); border-radius: 20px"></a>
-	      </td>
-		
-		 <td width="12%" style="vertical-align: middle">
-		<a href="CONP.html"><img width= "60%" src = "images/conp-logo.png" style="border-right: 3; border-color: rgba(0, 0, 0, 0) ;border-radius:10px"></a>
-	      </td>
-		  
-		  <td width = "12%" style = "vertical-align: middle">
-		<a href="LORIS_indepth.html#/loris-indepth-destination"><img width= "100%" src = "images/eegnet-logo.png" style="border: 3; border-color: rgba(0, 0, 0, 0); border-radius: 10px"></a>
-	      </td>
-		  
-		 <td width = "12%" style = "vertical-align:middle">
-        	<a href = "Brain_browser.html"><img width="60%" src="images/BrainBrowser-background.png" style="border: 0; border-color: rgba(0, 0, 0, 0); border-radius:20px;"></a>
-	      </td>
-		  
-	      <td width = "12%" style = "vertical-align:middle">
-        	<a href="Open_Science.html#/openscience-destination"><img width= "70%" src="images/Open_science.png" style="border: 0"></a>
-	      </td>
-
-	      <td width = "12%" style = "vertical-align:middle">
-		<a href="Data_sharing.html#/data-sharing-destination"><img width= "70%" src="images/Data_sharing.png" style="border: 0"></a>
-              </td>
+		<section data-background-color="#ffffff">
 	  
-		  <td width="12%" style="vertical-align: middle">
-		<a href="MNI_ecosystem.html"><img width= "70%" src = "images/mni_eco_info.jpg" style="border: 0"></a>
-	      </td>
-		</tr>
-	-->
-	
+		  <table class="reveal">
+			<tr>
+			<a href="MCIN.html"><img width="40%" src="images/MCIN.png" style="border: 0"</a>
+			</tr>
+			
+			<tr>
+			<p style="font-size:55%; color:#224372;"><a target="_blank" href="https://mcin.ca/">The McGill Centre for Integrative Neuroscience (MCIN)</a>, led by <a target="_blank" href="https://mcin.ca/about-mcin/alans-cv/">Dr. Alan Evans</a> 
+			at McGill University, creates open neuroinformatics platforms to conduct computationally-intensive brain research using innovative mathematical and statistical approaches to integrate clinical, psychological or neuroimaging phenotypes with genotypic information. 
+			MCIN constitutes the neuroinformatics component of the <a href="https://www.mcgill.ca/ludmercentre/" target = "_blank">the Ludmer Centre for Neuroinformatics and Mental Health</a> and coordinates global collaborative initiatives including 
+			<a href="https://conp.ca/" target = "_blank">the Canadian Open Neuroscience Platform (CONP).</a> </small></p>
+			<p style="font-size:55%; color:#224372;"> Follow the links below to learn more about MCIN's platforms and projects based on use cases.</small></p>
+			</tr>
+			
+			<tr>
+			  <td width="25%" style="vertical-align: middle">
+			<a href="data_management.html"><img width= "80%" src = "images/data-management.png" style="border: 0;border-radius: 10px;"></a>
+			  </td>
+			 
+			  <td width = "25%" style = "vertical-align:middle">		
+			<a href = "Big_brain.html"><img width= "80%" src="images/images/data-processing.png" style="border: 0; border-radius: 10px"></a>
+			  </td>
+			  
+			   <td width = "25%" style = "vertical-align: middle">
+			<a href="LORIS_indepth.html#/loris-indepth-destination"><img width= "80%" src = "images/images/data-visualization.png" style="border: 0; border-radius: 10px;"></a>
+			  </td>
+			  
+			  <td width = "25%" style = "vertical-align:middle">		
+			<a href = "Big_brain.html"><img width= "80%" src="images/images/data-governance.png" style="border: 0; border-radius: 10px"></a>
+			  </td>
 	  </tr></table>
-	 	  
 	</section>
-      
     </div>
-    
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
     
@@ -136,6 +132,5 @@
 			});
 
 		</script>
-
 	</body>
 </html>
